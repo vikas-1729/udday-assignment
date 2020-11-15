@@ -1,10 +1,43 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchContainer1: '',
+      searchContainer2: '',
+    };
+  }
+  handleEnter = (e, view) => {
+    if (e.key === 'Enter') {
+      this.handleSearch(view);
+    }
+  };
+  handleSearchContainer1 = (e) => {
+    this.setState({
+      searchContainer1: e.target.value,
+    });
+  };
+  handleSearchContainer2 = (e) => {
+    this.setState({
+      searchContainer2: e.target.value,
+    });
+  };
   logout = () => {
     localStorage.setItem('isLogged', 'false');
     localStorage.removeItem('user');
     this.props.handleLogout();
+  };
+  handleSearch = (view) => {
+    let val = '';
+    let root = '';
+    if (view === 'left') {
+      root = this.state.searchContainer1.split('/')[0];
+      val = this.state.searchContainer1.split('/')[1];
+    } else if (view === 'right') {
+      root = this.state.searchContainer1.split('/')[0];
+      val = this.state.searchContainer2.split('/')[1];
+    }
+    this.props.componentToRender(root, val, view);
   };
 
   render() {
@@ -27,7 +60,14 @@ class Navbar extends Component {
                 src="https://image.flaticon.com/icons/svg/483/483356.svg"
                 alt="search-icon"
               />
-              <input placeholder="Search" onChange={this.handleSearch} />
+              <input
+                placeholder="Search"
+                value={this.state.searchContainer1}
+                onChange={(e) => this.handleSearchContainer1(e)}
+                onKeyPress={(e) => {
+                  this.handleEnter(e, 'left');
+                }}
+              />
             </div>
 
             <div className="search-container" id="search-container2">
@@ -36,7 +76,14 @@ class Navbar extends Component {
                 src="https://image.flaticon.com/icons/svg/483/483356.svg"
                 alt="search-icon"
               />
-              <input placeholder="Search" onChange={this.handleSearch} />
+              <input
+                placeholder="Search"
+                value={this.state.searchContainer2}
+                onChange={(e) => this.handleSearchContainer2(e)}
+                onKeyPress={(e) => {
+                  this.handleEnter(e, 'right');
+                }}
+              />
             </div>
             <div className="logout">
               <img

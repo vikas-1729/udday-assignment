@@ -174,7 +174,6 @@ html {
   #left-view,
   #right-view {
     width: 100%;
-    background-color: red;
   }
 }
 .btn-logout {
@@ -190,4 +189,10 @@ html {
 }
 .btn-logout:hover {
   cursor: pointer;
+}
+
+.child-container {
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
 }

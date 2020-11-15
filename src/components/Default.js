@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Error404 extends Component {
+class Default extends Component {
   render() {
     return (
       <div className="child-container">
-        <h1>Page 404 Not found!!</h1>
+        <h1>Enter on text1 </h1>
       </div>
     );
   }
 }
 
-export default Error404;
+export default Default;
