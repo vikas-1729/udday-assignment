@@ -177,3 +177,17 @@ html {
     background-color: red;
   }
 }
+.btn-logout {
+  width: 100%;
+
+  background: #ef7917;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 20px;
+  padding: 9px;
+  border: none;
+  outline: none;
+}
+.btn-logout:hover {
+  cursor: pointer;
+}

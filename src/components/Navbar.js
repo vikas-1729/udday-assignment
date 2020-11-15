@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 class Navbar extends Component {
+  logout = () => {
+    localStorage.setItem('isLogged', 'false');
+    localStorage.removeItem('user');
+    this.props.handleLogout();
+  };
+
   render() {
     return (
       <div>
-        <div>
+        <div style={{ width: '100vw' }}>
           <nav className="nav" id="myTopnav">
             <div className="user">
               <img
@@ -14,7 +19,7 @@ class Navbar extends Component {
                 alt="user-dp"
                 id="user-dp"
               />
-              <span>Varun</span>
+              <span>{this.props.name}</span>
             </div>
             <div className="search-container" id="search-conatiner1">
               <img
@@ -34,16 +39,16 @@ class Navbar extends Component {
               <input placeholder="Search" onChange={this.handleSearch} />
             </div>
             <div className="logout">
-              <Link to="/setting">
-                <img
-                  className="nav-img"
-                  src="https://www.flaticon.com/svg/static/icons/svg/992/992680.svg"
-                  alt="logout"
-                  id="user-dp"
-                />
-              </Link>
+              <img
+                className="nav-img"
+                src="https://www.flaticon.com/svg/static/icons/svg/992/992680.svg"
+                alt="logout"
+                id="user-dp"
+              />
               <span>
-                <a href="#">Logout</a>
+                <button className="btn-logout" onClick={this.logout}>
+                  Logout
+                </button>
               </span>
             </div>
             <div className="nav-menu" onClick={myFunction} id="nav-menu-id">
