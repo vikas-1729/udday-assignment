@@ -55,7 +55,7 @@ Live at [https://udday-96f2a.web.app/](https://udday-96f2a.web.app/)
    
    There are basically two urls one for 
    1. Login Page [https://udday-96f2a.web.app/login] here you can go and login with username='Vikas' Password='12345'
-   2. Home Page [https://udday-96f2a.web.app/] Here you can clickon left search bar or right search bar to view the page
+   2. Home Page [https://udday-96f2a.web.app/] Here you can click on left search  bar or right search bar enter url/webpage do this as i have mention above and enter to view the page
    
    
    # Tech
