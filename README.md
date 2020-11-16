@@ -55,6 +55,9 @@ First of all you have to login to go to home page
 1. left search bar : Here you can enter url/webpage to view result on left part
 2. right search bar : Here you can enter url/webpage to view result on right part
 3. logout:you can logout yourself
+4. Responsive design
+
+![alt text](https://github.com/vikas-1729/udday-assignment/blob/master/screenshots/responsive-navbar.png)
 
 ![alt text](https://github.com/vikas-1729/udday-assignment/blob/master/screenshots/responsive-page.png)
 
