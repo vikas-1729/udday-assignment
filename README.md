@@ -18,7 +18,7 @@ Live at [https://udday-96f2a.web.app/](https://udday-96f2a.web.app/)
 
 ### for example to view Physics webpage you can write localhost:3000/Physics or Physics in left or right search bar
 
-![alt text](https://github.com/vikas-1729/udday-assignment/blob/master/screenshots/view.png)
+![alt text](https://github.com/vikas-1729/udday-assignment/blob/master/screenshots/write.png)
 
 ### This website is responsive so it will give you clear view
 
