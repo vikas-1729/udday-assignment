@@ -37,7 +37,6 @@ class Navbar extends Component {
         val = root;
         root = 'localhost:3000';
       }
-      console.log(root, val);
     } else if (view === 'right') {
       root = this.state.searchContainer2.split('/')[0];
       val = this.state.searchContainer2.split('/')[1];
@@ -45,7 +44,6 @@ class Navbar extends Component {
         val = root;
         root = 'localhost:3000';
       }
-      console.log(root, val);
     }
     this.props.componentToRender(root, val, view);
   };

@@ -165,6 +165,7 @@ html {
   box-sizing: border-box;
   border-right: 1px solid black;
   border-bottom: 2px solid black;
+  background: rgb(255, 239, 248);
 }
 #right-view {
   text-align: center;

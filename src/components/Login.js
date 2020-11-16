@@ -13,33 +13,16 @@ class Login extends Component {
   }
 
   handleUsername = (e) => {
-    // let x = document.getElementById('input-text1-id');
-    // if (x.className === 'input-text' && e.target.value) {
-    //   console.log('okk i am');
-    //   x.className += ' has-val';
-    // } else {
-    //   x.className = 'input-text';
-    // }
-
     this.setState({
       username: e.target.value,
     });
   };
   handlePassword = (e) => {
-    console.log('okk we');
-    // let x = document.getElementById('input-text2-id');
-    // if (x.className === 'input-text' && e.target.value) {
-    //   console.log('okk i am');
-    //   x.className += ' has-val';
-    // } else {
-    //   x.className = 'input-text';
-    // }
     this.setState({
       password: e.target.value,
     });
   };
   handleSubmit = (e) => {
-    console.log('okk');
     let { username, password } = this.state;
     username = username.trim();
     password = password.trim();
@@ -49,21 +32,16 @@ class Login extends Component {
 
       if (username === 'Vikas' && password === '12345') {
         //make it redirect
-        console.log('OKK1');
-        console.log('locast', localStorage.getItem('user'));
-
         let user = {
           name: 'Vikas',
         };
         localStorage.setItem('isLogged', 'true');
-        console.log('vikas', JSON.stringify(user));
         localStorage.setItem('user', JSON.stringify(user));
-        console.log('afca', localStorage.getItem('user'));
-        console.log('ok ready to go');
         this.props.handleLogin();
         return;
       }
     }
+
     this.setState({
       error: 'Wrong credentials',
     });

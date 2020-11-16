@@ -10,7 +10,6 @@ import { Home } from './index';
 import Login from './Login';
 const PrivateRoute = (props) => {
   const { path, component: Component, isLogged, handleLogout, user } = props;
-  console.log('props', props);
   return (
     <Route
       path={path}
