@@ -6,11 +6,12 @@
 Live at [https://udday-96f2a.web.app/](https://udday-96f2a.web.app/)
  ## Important Points
   ### Point to note  use username 'Vikas' and password '12345'for login[https://udday-96f2a.web.app/login]  it may be possible that chrome show you password breach page please ignore it
-  ### when you reach at home-page [https://udday-96f2a.web.app/login] after login you will see two search bar one on left and one on right
+  ### when you reach at home-page [https://udday-96f2a.web.app/] after login you will see two search bar one on left and one on right
   ### in that search-bar you can view our page for that you need to write url/webpage or webpage
   ### url=localhost:3000 you can enter either url/webpage or only webpage url must be localhost:3000
   ### webpage available are Physics,Chemistry,Maths,Enviroment,Temp1
   ### for example to view Physics webpage you can write localhost:3000/Physics or Physics in left or right search bar
+   ![alt text](https://github.com/vikas-1729/udday-assignment/blob/master/screenshots/view.png)
   ### This website is responsive so it will give you clear view
 
 
