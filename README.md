@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+ # Page view:
+ ![alt text](https://github.com/vikas-1729/udayy-assignment/blob/master/screenshots/home-page.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Live at [https://udday-96f2a.web.app/](https://udday-96f2a.web.app/)
+ ## Important Points
+  ## point to note  use username 'Vikas' and password '12345'for login[https://udday-96f2a.web.app/login]  it may be possible that chrome show you password breach page please ignore it
+  ## when you reach at home-page [https://udday-96f2a.web.app/login] after login you will see two search bar one on left and one on right
+  ## in that search-bar you can view our page for that you nedd to write url/webpage or webpage
+  ## url:localhost:3000 you can enter either url/webpage or only webpage url must be localhost:3000
+  ## webpage available are Physics,Chemistry,Maths,Enviroment,Temp1
+  ## for example to view Physics webpage you can write localhost:3000/Physics or Physics
+  ## This website is responsive so it will give you clear view
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tables of Content
+  
+ 1. [Intro](https://github.com/vikas-1729/udday-assignment#Intro) 
+ 2. [Setup](https://github.com/vikas-1729/udday-assignment#Setup)
+ 3. [Flow](https://github.com/vikas-1729/udday-assignment#Flow)
+ 4. [Frontend](https://github.com/vikas-1729/udday-assignment#Frontend)
+ 5. [Tech](https://github.com/vikas-1729/udday-assignment#Tech)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Intro
+  
+  It is simply application of two pages one for authentication and other page where are two search bar where you can search diffrent webpage and view 
+  it on left and right here i have used 4 webpages mentioned in Flow part you can add more webpages  
+  
+  
+ ![alt text](https://github.com/vikas-1729/udday-assignment/blob/master/screenshots/home-page)
+  
+  
+  It shows you entered webpage on left and right 
+  
+  
+  # Setup
+  
+   After cloning this to run on local server In the project directory, you can run:
 
-### `npm run build`
+    ### `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  Runs the app in the development mode.\
+  Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  
+  # Flow
+  First of all you have to login to go to home page 
+  
+  1. left search bar : Here you can enter url/webpage to view result on left part
+  2. right search bar : Here you can enter url/webpage to view result on right part
+  3. logout:you can logout yourself
+  
+ ![alt text](https://github.com/vikas-1729/udday-assignment/blob/master/screenshots/responsive-page)
+     
+  # Frontend
+   
+   There are basically two urls one for 
+   1. Login Page [https://udday-96f2a.web.app/login] here you can go and login with username='Vikas' Password='12345'
+   2. Home Page [https://udday-96f2a.web.app/] Here you can clickon left search bar or right search bar to view the page
+   
+   
+   # Tech
+   
+   1. React js   
+   2. Library used react-router-dom for navigation purpose
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
