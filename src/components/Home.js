@@ -21,13 +21,16 @@ class Home extends Component {
     };
   }
   renderComponent = (root, url) => {
+    // here we decide which component to render
     root = root.toLowerCase();
     url = url.toLowerCase();
     if (root !== 'localhost:3000') {
       return <Error404 />;
     }
 
-    switch (url) {
+    switch (
+      url // you can create and add more webpages here
+    ) {
       case '':
         return <Default />;
       case 'temp1':

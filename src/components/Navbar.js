@@ -8,8 +8,9 @@ class Navbar extends Component {
     };
   }
   handleEnter = (e, view) => {
+    // handle enter
     if (e.key === 'Enter') {
-      this.handleSearch(view);
+      this.handleSearch(view); //handle search by calling view
     }
   };
   handleSearchContainer1 = (e) => {
@@ -23,7 +24,7 @@ class Navbar extends Component {
     });
   };
   logout = () => {
-    localStorage.setItem('isLogged', 'false');
+    localStorage.setItem('isLogged', 'false'); // removing local storage
     localStorage.removeItem('user');
     this.props.handleLogout();
   };
@@ -31,6 +32,7 @@ class Navbar extends Component {
     let val = '';
     let root = '';
     if (view === 'left') {
+      // getting url and webpage:view
       root = this.state.searchContainer1.split('/')[0];
       val = this.state.searchContainer1.split('/')[1];
       if (val === undefined) {

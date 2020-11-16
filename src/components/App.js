@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; // importing React
 import {
   BrowserRouter as Router,
   Redirect,
@@ -9,6 +9,7 @@ import Error404 from './Error404';
 import { Home } from './index';
 import Login from './Login';
 const PrivateRoute = (props) => {
+  // I make private route so if nyone has to enter first i check is it logged in or not
   const { path, component: Component, isLogged, handleLogout, user } = props;
   return (
     <Route
