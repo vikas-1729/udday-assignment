@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class Error404 extends Component {
+class Chemistry extends Component {
   render() {
     return (
       <div className="child-container">
-        <h3>Not any page exist please read readme.md to know the url!!</h3>
+        <h3>Hii i am chemistry let's make our bond strong</h3>
         <div>
           <img
             className="child-container-img"
-            src="https://www.flaticon.com/svg/static/icons/svg/943/943591.svg"
+            src="https://www.flaticon.com/svg/static/icons/svg/2941/2941556.svg"
             alt="error-404"
           />
         </div>
@@ -17,4 +17,4 @@ class Error404 extends Component {
   }
 }
 
-export default Error404;
+export default Chemistry;

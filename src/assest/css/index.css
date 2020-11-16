@@ -161,19 +161,24 @@ html {
 #left-view {
   text-align: center;
   width: 50%;
-  border: 2px solid black;
+  height: 87vh;
   box-sizing: border-box;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
 }
 #right-view {
   text-align: center;
   width: 50%;
-  border: 2px solid black;
+  height: 87vh;
   box-sizing: border-box;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
 }
 @media screen and (max-width: 700px) {
   #left-view,
   #right-view {
     width: 100%;
+    height: auto;
   }
 }
 .btn-logout {
@@ -192,7 +197,18 @@ html {
 }
 
 .child-container {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
   text-align: center;
   vertical-align: middle;
+}
+.child-container-img {
+  height: 200px;
+}
+.child-container-img > h3 {
+  margin-top: 50px;
+}
+.child-container div {
+  margin-top: 50px;
 }

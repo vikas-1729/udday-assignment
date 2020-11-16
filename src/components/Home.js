@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
-import { Left, Right, Navbar, Temp1, Error404, Default } from './index';
+import {
+  Left,
+  Right,
+  Navbar,
+  Temp1,
+  Error404,
+  Default,
+  Maths,
+  Chemistry,
+  Physics,
+  Enviroment,
+} from './index';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      leftComponent: <Default />,
-      rightComponent: <Default />,
+      leftComponent: <Default view="left" />,
+      rightComponent: <Default view="right" />,
     };
   }
   renderComponent = (root, url) => {
+    root = root.toLowerCase();
+    url = url.toLowerCase();
     if (root !== 'localhost:3000') {
-      return 'Error404';
+      return <Error404 />;
     }
 
     switch (url) {
@@ -19,6 +32,16 @@ class Home extends Component {
         return <Default />;
       case 'temp1':
         return <Temp1 />;
+      case 'physics':
+        return <Physics />;
+      case 'chemistry':
+        return <Chemistry />;
+      case 'maths':
+      case 'mathematics':
+      case 'math':
+        return <Maths />;
+      case 'enviroment':
+        return <Enviroment />;
 
       default:
         return <Error404 />;
@@ -40,8 +63,15 @@ class Home extends Component {
     return (
       <div id="main-container">
         <Navbar {...this.props} componentToRender={this.componentToRender} />
-        <Left>{leftComponent}</Left>
-        <Right>{rightComponent}</Right>
+        <Left>
+          <h2 style={{ marginTop: 30 }}>Result of left-search</h2>
+          {leftComponent}
+        </Left>
+        <Right>
+          {' '}
+          <h2 style={{ marginTop: 30 }}>Result of right-search</h2>
+          {rightComponent}
+        </Right>
       </div>
     );
   }

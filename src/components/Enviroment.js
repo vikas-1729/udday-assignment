@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class Error404 extends Component {
+class Enviroment extends Component {
   render() {
     return (
       <div className="child-container">
-        <h3>Not any page exist please read readme.md to know the url!!</h3>
+        <h3>Enviroment !!</h3>
         <div>
           <img
             className="child-container-img"
-            src="https://www.flaticon.com/svg/static/icons/svg/943/943591.svg"
+            src="https://www.flaticon.com/svg/static/icons/svg/1598/1598196.svg"
             alt="error-404"
           />
         </div>
@@ -17,4 +17,4 @@ class Error404 extends Component {
   }
 }
 
-export default Error404;
+export default Enviroment;
